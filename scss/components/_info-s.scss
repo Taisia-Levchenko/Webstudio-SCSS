@@ -1,0 +1,47 @@
+.info {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.info_title {
+    /* font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    width: 270px;   */
+    margin-bottom: 10px;
+}
+
+/* .info_item {
+    width: 270px;
+} */
+.info_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info_item {
+    flex-basis: calc((100% - 3*30px) / 4);
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--team);
+    margin-bottom: 30px;
+}
+
+.info-svg {
+    fill: var(--title);
+
+}
+
+.info_text {
+    color: var(--text);
+}

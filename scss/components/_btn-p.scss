@@ -1,0 +1,47 @@
+.btn-cont {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+    flex-basis: calc((100% - 4*8px) / 5);
+}
+
+.btn {
+    color: var(--title);
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.48px;
+    /* width: 125px;
+    height: 38px;  */
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+.btn:hover {
+    color: var(--place);
+    background-color: var(--hover);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation: jump 1s ease infinite alternate;
+}
