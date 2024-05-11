@@ -5,7 +5,12 @@
   --title: #212121;
   --text: #757575;
   --background: #2F303A;
+  --team: #F5F4FA;
   --foot: rgba(255, 255, 255, 0.60);
+  --svg: rgba(255, 255, 255, 0.1);
+  --clients: #afb1b8;
+  --bg-doings: rgba(47, 48, 58, 0.8);
+  --modal: rgba(117, 117, 117, 0.5);
   --pics: #EEE;
   --overlay: rgba(33, 150, 243, 0.9);
 }
@@ -21,7 +26,7 @@ body {
   font-style: normal;
   line-height: normal;
   color: var(--title);
-  font-size: 16px;
+  font-size: 14px;
 }
 
 a {
@@ -48,10 +53,17 @@ ul {
 
 ul,
 p,
+h1,
+h3,
 h4,
+h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -260,6 +272,7 @@ h6 {
 .main-list_t {
   padding-left: 24px;
   z-index: 10;
+  font-size: 16px;
 }
 
 .main-list_title {
@@ -273,6 +286,7 @@ h6 {
   color: var(--text);
   line-height: 1.88;
   letter-spacing: 0.48px;
+  font-size: 16px;
 }
 
 .main-list_item:hover .overlay {

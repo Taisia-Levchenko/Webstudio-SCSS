@@ -28,6 +28,7 @@
 .main-list_t {
     padding-left: 24px;
     z-index: 10;
+    font-size: 16px;
 }
 
 .main-list_title {
@@ -41,6 +42,7 @@
     color: var(--text);
     line-height: 1.88;
     letter-spacing: 0.48px;
+    font-size: 16px;
 }
 
 .main-list_item:hover .overlay {

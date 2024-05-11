@@ -1,11 +1,11 @@
-@import "./base/variable-p";
-@import "./base/common-p";
+@import "./base/variable";
+@import "./base/common";
 
 @import "./components/header";
-@import "./components/main-p";
-@import "./components/btn-p";
-@import "./components/main-list-p";
-@import "./components/ovelay-p";
+@import "./components/portfolio/main-p";
+@import "./components/portfolio/btn-p";
+@import "./components/portfolio/main-list-p";
+@import "./components/portfolio/ovelay-p";
 
 @import "./components/footer";
 @import "./components/foot-links";
