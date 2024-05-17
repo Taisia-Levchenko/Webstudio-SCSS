@@ -1,48 +1,42 @@
 .doings {
-    padding-bottom: 94px;
-}
-
-.doings-title {
+  padding-bottom: 94px;
+  &-title {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 0.42px;
     text-align: center;
     margin-bottom: 50px;
-}
-
-.doings-list {
+  }
+  &-list {
     display: flex;
     flex-direction: row;
     gap: 30px;
     justify-content: space-between;
-}
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+    &__text {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--place);
+      position: relative;
+      z-index: 3;
+      top: -75px;
+      background-color: var(--bg-doings);
+      padding-top: 27px;
+      padding-bottom: 27px;
 
-.doings-list__item {
-    flex-basis: calc((100% - 60px) / 3);
+      
+    }
+    &__photo {
+      width: 370px;
+      height: 294px;
+    }
+  }
 }
-
-.doings-list__text {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--place);
-    position: relative;
-    z-index: 3;
-    top: -75px;
-    background-color: var(--bg-doings);
-    padding-top: 27px;
-    padding-bottom: 27px;
-}
-
-.doingslist__text {
-    color: var(--text);
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-}
-
-.doings-list__photo {
-    width: 370px;
-    height: 294px;
-}
+//  color: var(--text);
+//       line-height: 1.71;
+//       letter-spacing: 0.42px;

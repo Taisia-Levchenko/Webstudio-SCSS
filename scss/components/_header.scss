@@ -1,96 +1,100 @@
 .header .container {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header_div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .logo {
-    font-size: 26px;
-    font-family: 'Raleway', serif;
-    font-weight: 700;
+  font-size: 26px;
+  font-family: "Raleway", serif;
+  font-weight: 700;
 }
 .header-logo {
-    margin-right: 93px;
+  margin-right: 93px;
 }
 .first-part {
-    color: var(--hover);
+  color: var(--hover);
 }
 .second-part {
-    color: var(--second);
+  color: var(--second);
 }
 .nav-list {
-    display: flex;
-    gap: 50px;
-}
-.nav-list__item {
+  display: flex;
+  gap: 50px;
+  &__item {
     position: relative;
-}
-.nav-list__link {
+  }
+  &__link {
     color: var(--title);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
+  }
 }
 .current::after {
-    content: "";
-    display: block;
-    color: var(--hover);
-    height: 4px;
-    width: 100%;
-    background: var(--hover);
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    bottom: -34px;
+  content: "";
+  display: block;
+  color: var(--hover);
+  height: 4px;
+  width: 100%;
+  background: var(--hover);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -34px;
 }
 .other::after {
-    content: "";
-    display: block;
-    color: var(--hover);
-    height: 4px;
-    width: 0;
-    background-color: var(--hover);
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    bottom: -34px;
-    transition: width 1s ease;
+  content: "";
+  display: block;
+  color: var(--hover);
+  height: 4px;
+  width: 0;
+  background-color: var(--hover);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -34px;
+  transition: width 1s ease;
 }
 .other:hover::after {
-    width: 100%;
+  width: 100%;
 }
-.header-contact__list {
+.header-contact {
+  &__list {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
-}
-.header-contact__link {
+  }
+  &__link {
     color: var(--text);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
-}
-.header-contact__svg {
+    svg {
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+    &:hover {
+        .header-svg {
+            fill: var(--hover);
+        }
+    }
+  }
+  &__svg {
     width: 20px;
     height: 20px;
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
     fill: var(--text);
-}
-.header-contact__link svg {
-    transition: transform 0.3s ease;
-}
-.header-contact__link svg:hover {
-    transform: rotate(360deg);
-}
-.header-contact__link:hover .header-svg {
-    fill: var(--hover);
+  }
 }

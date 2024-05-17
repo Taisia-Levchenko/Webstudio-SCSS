@@ -1,64 +1,57 @@
 .subscribe {
-    padding-left: 72px;
-    padding-top: 10px;
-}
-
-.subscribe-text {
-    font-family: 'Roboto', sans-serif;
+  padding-left: 72px;
+  padding-top: 10px;
+  &-text {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     color: var(--place);
     margin-bottom: 19px;
-}
-
-.subscribe-box {
+  }
+  &-box {
     display: flex;
-}
-
-.subscribe-box__input {
-    margin: auto;
-    margin-bottom: 20px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    display: block;
-    height: 50px;
-    padding: 15px 16px;
-    color: #FFFFFF;
-    outline: none;
-    width: 358px;
-}
-
-.subscribe-box__input:focus {
-    border-color: var(--hover);
-}
-
-.subscribe-box__btn {
-    color: var(--place);
-    background-color: var(--hover);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    fill: var(--text);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    align-content: space-around;
-    border: none;
-    margin-left: 12px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
-
-.subscribe-box__svg {
-    margin-left: 10px;
-    fill: var(--place);
-}
-
-.subscribe-box__btn:hover+.subscribe-box__svg {
-    color: var(--hover);
-    background-color: var(--place);
+    &__input {
+      margin: auto;
+      margin-bottom: 20px;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      display: block;
+      height: 50px;
+      padding: 15px 16px;
+      color: #ffffff;
+      outline: none;
+      width: 358px;
+      &:focus {
+        border-color: var(--hover);
+      }
+    }
+    &__btn {
+      color: var(--place);
+      background-color: var(--hover);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.88;
+      width: 200px;
+      height: 50px;
+      border-radius: 4px;
+      fill: var(--text);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-content: space-around;
+      border: none;
+      margin-left: 12px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+      &:hover + .subscribe-box__svg {
+        color: var(--hover);
+        background-color: var(--place);
+      }
+    }
+    &__svg {
+      margin-left: 10px;
+      fill: var(--place);
+    }
+  }
 }
