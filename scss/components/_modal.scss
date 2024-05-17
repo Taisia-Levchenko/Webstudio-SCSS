@@ -78,104 +78,95 @@
     &__wrap {
       position: relative;
       display: flex;
+      .input-icon {
+        position: absolute;
+        left: 12px;
+        fill: var(--title);
+        align-self: center;
+        justify-self: center;
+      }
+      .modal-input:hover + .input-icon,
+      .modal-input:focus + .input-icon {
+        fill: var(--hover);
+      }
+    }
+  }
+  &-field {
+    .user-comment {
+      width: 100%;
+      resize: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.14;
+      color: var(--title);
+      height: 120px;
+      padding: 12px 16px;
+      outline: none;
+      &:placeholder-shown {
+        color: var(--modal);
+      }
+      &:hover,
+      :focus {
+        border-color: var(--hover);
+      }
+    }
+  }
+  .accept-box {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.71;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .input-accept {
+      width: 16px;
+      height: 15px;
+      border: 2px solid #000000;
+      border-radius: 3px;
+      &:checked + .label-accept::before {
+        background-color: var(--hover);
+        border: none;
+        background-image: url(../images/check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &:checked + &:focus + .label-accept::before {
+        border-color: var(--hover);
+      }
+    }
+    .label-accept {
+      margin-left: 8px;
+    }
+    .label-accept {
+      .accept-link {
+        color: var(--hover);
+        text-decoration: underline;
+      }
+    }
+  }
+  .btn-submit {
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--hover);
+    color: var(--place);
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    &:hover {
+      color: var(--hover);
+      background: var(--place);
     }
   }
 }
-.input-icon {
-  position: absolute;
-  left: 12px;
-  fill: var(--title);
-  align-self: center;
-  justify-self: center;
-}
-
-.modal-input:hover + .input-icon,
-.modal-input:focus + .input-icon {
-  fill: var(--hover);
-}
-
-.user-comment {
-  width: 100%;
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--title);
-  height: 120px;
-  padding: 12px 16px;
-  outline: none;
-}
-
-.user-comment:placeholder-shown {
-  color: var(--modal);
-}
-
-.user-comment:hover,
-.user-comment:focus {
-  border-color: var(--hover);
-}
-
-.input-accept {
-  width: 16px;
-  height: 15px;
-  border: 2px solid #000000;
-  border-radius: 3px;
-}
-
-.label-accept {
-  margin-left: 8px;
-}
-
-.input-accept:checked + .label-accept::before {
-  background-color: var(--hover);
-  border: none;
-  background-image: url(../images/check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.input-accept:focus + .label-accept::before {
-  border-color: var(--hover);
-}
-
-.accept-link {
-  color: var(--hover);
-  text-decoration: underline;
-}
-
-.accept-box {
-  margin-bottom: 30px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.71;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.btn-submit {
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: var(--hover);
-  color: var(--place);
-  font-weight: 700;
-  font-size: 16px;
-  display: block;
-  margin: 0 auto;
-  border: none;
-}
-
-.btn-submit:hover {
-  color: var(--hover);
-  background: var(--place);
-}
-
 .is-hidden {
   opacity: 0;
   pointer-events: 0;
