@@ -22,7 +22,7 @@
     gap: 30px;
 }
 
-.team-item {
+.team-list__item {
     background-color: var(--place);
     /* width: 270px; */
     /* height: 368px; */
@@ -30,8 +30,10 @@
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     flex-basis: calc((100% - 3*30px) / 4);
 }
-
-.team-item_title {
+.team-list__img {
+    height: 260px;
+}
+.team-list__title {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
@@ -40,18 +42,13 @@
     margin-bottom: 10px;
     /* padding: 30px 70px 10px 0px; */
 }
-
-.team-item_text {
+.team-list__text {
     font-size: 16px;
     letter-spacing: 0.48px;
     text-align: center;
 }
 
-.team-item_img {
-    height: 260px;
-}
-
-.svg-list {
+.team-list__svg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +56,7 @@
     gap: 10px;
 }
 
-.svg-list_link {
+.svg-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,16 +64,16 @@
     height: 44px;
 }
 
-.svg-list_link:hover {
+.svg-list__link:hover {
     background-color: var(--hover);
     border-radius: 50%;
 }
 
-.svg-list_svg {
+.svg-list__svg {
     fill: var(--clients);
 }
 
-.svg-list_link:hover .svg-list_svg {
+.svg-list__link:hover .svg-list__svg {
     fill: var(--place);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

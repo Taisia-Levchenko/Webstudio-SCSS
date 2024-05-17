@@ -17,11 +17,11 @@
     justify-content: space-between;
 }
 
-.doings-list_item {
+.doings-list__item {
     flex-basis: calc((100% - 60px) / 3);
 }
 
-.doings-list_text {
+.doings-list__text {
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -36,13 +36,13 @@
     padding-bottom: 27px;
 }
 
-.doings_text {
+.doingslist__text {
     color: var(--text);
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
 
-.doings-list_photo {
+.doings-list__photo {
     width: 370px;
     height: 294px;
 }

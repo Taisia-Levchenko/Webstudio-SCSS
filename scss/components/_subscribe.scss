@@ -1,9 +1,9 @@
 .subscribe {
-    padding-left: 78px;
+    padding-left: 72px;
     padding-top: 10px;
 }
 
-.footer-text {
+.subscribe-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 14px;
@@ -16,7 +16,7 @@
     display: flex;
 }
 
-.subscribe-input {
+.subscribe-box__input {
     margin: auto;
     margin-bottom: 20px;
     background-color: transparent;
@@ -30,11 +30,11 @@
     width: 358px;
 }
 
-.subscribe-input:focus {
+.subscribe-box__input:focus {
     border-color: var(--hover);
 }
 
-.subscribe-btn {
+.subscribe-box__btn {
     color: var(--place);
     background-color: var(--hover);
     font-weight: 700;
@@ -53,12 +53,12 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.subscribe-svg {
+.subscribe-box__svg {
     margin-left: 10px;
     fill: var(--place);
 }
 
-.subscribe-btn:hover+.subscribe-svg {
+.subscribe-box__btn:hover+.subscribe-box__svg {
     color: var(--hover);
     background-color: var(--place);
 }

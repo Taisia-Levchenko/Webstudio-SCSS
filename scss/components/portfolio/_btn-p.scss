@@ -1,4 +1,4 @@
-.btn-cont {
+.btn-div {
     padding-bottom: 50px;
     display: flex;
     flex-direction: row;
@@ -9,7 +9,7 @@
     flex-basis: calc((100% - 4*8px) / 5);
 }
 
-.btn {
+.btn-div__button {
     color: var(--title);
     text-align: center;
     font-family: 'Roboto', serif;
@@ -36,7 +36,7 @@
     }
 }
 
-.btn:hover {
+.btn-div__button:hover {
     color: var(--place);
     background-color: var(--hover);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);

@@ -14,7 +14,7 @@
     padding-top: 200px;
 }
 
-.section-hero_btn {
+.section-hero__btn {
     color: var(--place);
     background-color: var(--hover);
     font-family: 'Roboto', serif;
@@ -28,12 +28,12 @@
     border: none;
 }
 
-.section-hero_btn:hover {
+.section-hero__btn:hover {
     color: var(--hover);
     background: var(--place);
 }
 
-.section-hero_title {
+.section-hero__title {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;

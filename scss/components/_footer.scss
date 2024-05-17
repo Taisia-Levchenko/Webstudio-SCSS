@@ -13,18 +13,23 @@
 .foot-logo {
     margin-bottom: 20px;
 }
-
+.footer-secondpart {
+    color: var(--place);
+}
+.footer-logo {
+    margin-right: 93px;
+}
 .footer-sect {
     flex-direction: column;
     display: flex;
     gap: 9px;
 }
 
-.footer-place {
+.footer-sect__place {
     color: var(--place);
 }
 
-.footer-list {
+.footer-sect__list {
     display: flex;
     flex-direction: column;
     gap: 9px;
@@ -34,6 +39,3 @@
     color: var(--foot);
 }
 
-.footer-second-part {
-    color: var(--place);
-}

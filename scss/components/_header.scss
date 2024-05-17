@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.div-header {
+.header_div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,10 +29,10 @@
     display: flex;
     gap: 50px;
 }
-.nav-list_item {
+.nav-list__item {
     position: relative;
 }
-.nav-list_link {
+.nav-list__link {
     color: var(--title);
     font-size: 14px;
     font-weight: 500;
@@ -66,33 +66,31 @@
 .other:hover::after {
     width: 100%;
 }
-.contact_link {
+.header-contact__list {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.header-contact__link {
     color: var(--text);
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
 }
-.header-contact_list {
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-.header-svg {
+.header-contact__svg {
     width: 20px;
     height: 20px;
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
+    fill: var(--text);
 }
-.contact_link svg {
+.header-contact__link svg {
     transition: transform 0.3s ease;
 }
-.contact_link svg:hover {
+.header-contact__link svg:hover {
     transform: rotate(360deg);
 }
-.contact_link:hover .header-svg {
+.header-contact__link:hover .header-svg {
     fill: var(--hover);
-}
-.header-svg {
-    fill: var(--text);
 }

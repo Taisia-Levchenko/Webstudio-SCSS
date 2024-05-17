@@ -15,7 +15,7 @@
     gap: 30px;
 }
 
-.clients-item {
+.clients-list__item {
     border: 1px solid #afb1b8;
     border-radius: 4px;
     width: 170px;
@@ -25,16 +25,16 @@
     justify-content: center;
 }
 
-.clients-item:hover {
+.clients-list__item:hover {
     border: 1px solid #2196f3;
 }
 
-.clients-item:hover .clients-svg {
+.clients-list__item:hover .clients-item__svg {
     fill: var(--hover);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-svg {
+.clients-item__svg {
     fill: var(--clients);
 }

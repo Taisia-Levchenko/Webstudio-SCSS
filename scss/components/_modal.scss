@@ -28,7 +28,7 @@
     transform: translate(-50%, -50%);
 }
 
-.modal-close-btn {
+.modal-close__btn {
     width: 30px;
     height: 30px;
     background-color: var(--place);
@@ -43,8 +43,8 @@
     align-content: space-around;
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close__btn:hover,
+.modal-close__btn:focus {
     fill: var(--hover);
 }
 
@@ -86,7 +86,7 @@
     border-color: var(--hover);
 }
 
-.modal-input-wrap {
+.modal-input__wrap {
     position: relative;
     display: flex;
 }
