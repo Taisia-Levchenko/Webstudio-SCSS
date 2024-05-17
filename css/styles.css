@@ -389,7 +389,7 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list__item__svg {
+.clients-item__svg {
   fill: var(--clients);
 }
 
