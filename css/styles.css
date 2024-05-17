@@ -546,8 +546,7 @@ button {
   z-index: 10;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.backdrop.is-hidden {
+.backdrop .is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -555,7 +554,7 @@ button {
 .modal {
   /* display: none; */
   position: fixed;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 40px;
   border-radius: 4px;
   width: 528px;
@@ -564,7 +563,6 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .modal-close__btn {
   width: 30px;
   height: 30px;
@@ -579,12 +577,9 @@ button {
   justify-content: space-around;
   align-content: space-around;
 }
-
-.modal-close__btn:hover,
-.modal-close__btn:focus {
+.modal-close__btn:hover, .modal-close__btn:focus {
   fill: var(--hover);
 }
-
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -592,13 +587,9 @@ button {
   text-align: center;
   margin-bottom: 12px;
 }
-
-.modal-name,
-.modal-phone,
-.modal-email {
+.modal-name, .modal-phone, .modal-email {
   margin-bottom: 10px;
 }
-
 .modal-label {
   font-weight: 400;
   font-size: 12px;
@@ -607,7 +598,6 @@ button {
   display: block;
   margin-bottom: 4px;
 }
-
 .modal-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -617,12 +607,9 @@ button {
   cursor: pointer;
   outline: none;
 }
-
-.modal-input:hover,
-.modal-input:focus {
+.modal-input:hover, .modal-input:focus {
   border-color: var(--hover);
 }
-
 .modal-input__wrap {
   position: relative;
   display: flex;
