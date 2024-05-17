@@ -285,15 +285,6 @@ button {
   height: 294px;
 }
 
-.team-title {
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-  text-align: center;
-  /* width: 1200px; */
-}
-
 .team {
   background-color: var(--team);
   /* width: 1600px; */
@@ -301,14 +292,19 @@ button {
   padding-top: 94px;
   flex-wrap: wrap;
 }
-
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+  text-align: center;
+}
 .team-list {
   display: flex;
   /* width: 1200px; */
   flex-wrap: wrap;
   gap: 30px;
 }
-
 .team-list__item {
   background-color: var(--place);
   /* width: 270px; */
@@ -317,11 +313,9 @@ button {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   flex-basis: calc((100% - 90px) / 4);
 }
-
 .team-list__img {
   height: 260px;
 }
-
 .team-list__title {
   font-size: 16px;
   font-weight: 500;
@@ -331,13 +325,11 @@ button {
   margin-bottom: 10px;
   /* padding: 30px 70px 10px 0px; */
 }
-
 .team-list__text {
   font-size: 16px;
   letter-spacing: 0.48px;
   text-align: center;
 }
-
 .team-list__svg {
   display: flex;
   align-items: center;
@@ -346,6 +338,14 @@ button {
   gap: 10px;
 }
 
+.svg-list__item {
+  fill: var(--clients);
+}
+.svg-list__link:hover .svg-list__svg {
+  fill: var(--place);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .svg-list__link {
   display: flex;
   align-items: center;
@@ -353,39 +353,25 @@ button {
   width: 44px;
   height: 44px;
 }
-
 .svg-list__link:hover {
   background-color: var(--hover);
   border-radius: 50%;
-}
-
-.svg-list__svg {
-  fill: var(--clients);
-}
-
-.svg-list__link:hover .svg-list__svg {
-  fill: var(--place);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
   padding-top: 93px;
   padding-bottom: 94px;
 }
-
 .clients-title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
   margin-bottom: 49px;
 }
-
 .clients-list {
   display: flex;
   gap: 30px;
 }
-
 .clients-list__item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -395,18 +381,15 @@ button {
   align-items: center;
   justify-content: center;
 }
-
 .clients-list__item:hover {
   border: 1px solid #2196f3;
 }
-
 .clients-list__item:hover .clients-item__svg {
   fill: var(--hover);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-item__svg {
+.clients-list__item__svg {
   fill: var(--clients);
 }
 
