@@ -15,28 +15,28 @@
       margin: auto;
       margin-bottom: 20px;
       background-color: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 1px solid getColor("subscribe");
       border-radius: 4px;
       display: block;
       height: 50px;
       padding: 15px 16px;
-      color: #ffffff;
+      color: getColor("place");
       outline: none;
       width: 358px;
       &:focus {
-        border-color: var(--hover);
+        border-color: getColor("hover");
       }
     }
     &__btn {
-      color: var(--place);
-      background-color: var(--hover);
+      color: getColor("place");
+      background-color: getColor("hover");
       font-weight: 700;
       font-size: 16px;
       line-height: 1.88;
       width: 200px;
       height: 50px;
       border-radius: 4px;
-      fill: var(--text);
+      fill: getColor("text");
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -45,13 +45,13 @@
       margin-left: 12px;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
       &:hover + .subscribe-box__svg {
-        color: var(--hover);
-        background-color: var(--place);
+        color: getColor("hover");
+        background-color: getColor("place");
       }
     }
     &__svg {
       margin-left: 10px;
-      fill: var(--place);
+      fill: getColor("place");
     }
   }
 }

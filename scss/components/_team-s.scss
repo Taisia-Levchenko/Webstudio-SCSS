@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--team);
+  background-color: getColor("team");
   /* width: 1600px; */
   padding-bottom: 94px;
   padding-top: 94px;
@@ -17,7 +17,7 @@
     flex-wrap: wrap;
     gap: 30px;
     &__item {
-      background-color: var(--place);
+      background-color: getColor("place");
       /* width: 270px; */
       /* height: 368px; */
       padding-bottom: 30px;
@@ -52,11 +52,8 @@
   }
 }
 .svg-list {
-  &__item {
-    fill: var(--clients);
-  }
   &__link:hover .svg-list__svg {
-    fill: var(--place);
+    fill: getColor("place");
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -67,8 +64,11 @@
     width: 44px;
     height: 44px;
     &:hover {
-      background-color: var(--hover);
+      background-color: getColor("hover");
       border-radius: 50%;
     }
+  }
+  &__svg {
+    fill: getColor("clients");
   }
 }
