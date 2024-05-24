@@ -7,30 +7,30 @@
     text-align: center;
     margin-bottom: 49px;
   }
-  &-list {
-    display: flex;
-    gap: 30px;
-    &__item {
-      border: 1px solid #afb1b8;
-      border-radius: 4px;
-      width: 170px;
-      height: 92px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      &:hover {
-        border: 1px solid #2196f3;
-        .clients-item__svg {
-          fill: var(--hover);
-          transition-duration: 250ms;
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-      }
-    }
-  }
   &-item {
     &__svg {
-      fill: var(--clients); 
+      fill: var(--clients);
+    }
+  }
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+  &__item {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      border: 1px solid #2196f3;
+      .clients-item__svg {
+        fill: var(--hover);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
     }
   }
 }

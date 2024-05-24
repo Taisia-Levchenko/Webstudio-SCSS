@@ -63,35 +63,7 @@
     display: block;
     margin-bottom: 4px;
   }
-  &-input {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    width: 100%;
-    height: 40px;
-    padding-left: 42px;
-    cursor: pointer;
-    outline: none;
-    &:hover,
-    &:focus {
-      border-color: var(--hover);
-    }
-    &__wrap {
-      position: relative;
-      display: flex;
-      .input-icon {
-        position: absolute;
-        left: 12px;
-        fill: var(--title);
-        align-self: center;
-        justify-self: center;
-      }
-      .modal-input:hover + .input-icon,
-      .modal-input:focus + .input-icon {
-        fill: var(--hover);
-      }
-    }
-  }
-  &-field {
+  & &-field {
     .user-comment {
       width: 100%;
       resize: none;
@@ -164,6 +136,34 @@
     &:hover {
       color: var(--hover);
       background: var(--place);
+    }
+  }
+}
+.modal-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  cursor: pointer;
+  outline: none;
+  &:hover,
+  &:focus {
+    border-color: var(--hover);
+  }
+  &__wrap {
+    position: relative;
+    display: flex;
+    .input-icon {
+      position: absolute;
+      left: 12px;
+      fill: var(--title);
+      align-self: center;
+      justify-self: center;
+    }
+    .modal-input:hover + .input-icon,
+    .modal-input:focus + .input-icon {
+      fill: var(--hover);
     }
   }
 }

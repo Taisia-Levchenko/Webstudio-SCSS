@@ -1,33 +1,33 @@
 .info {
   padding-bottom: 94px;
   padding-top: 94px;
-  &-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    &__item {
-      flex-basis: calc((100% - 3 * 30px) / 4);
-    }
-    &__svg {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 4px;
-      width: 270px;
-      height: 120px;
-      background-color: var(--team);
-      margin-bottom: 30px;
-    }
-    &__title {
-        margin-bottom: 10px;
-    }
-    &__text {
-        color: var(--text);
-    }
-  }
   &-svg {
     fill: var(--title);
+  }
+}
+.info-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  &__item {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  &__svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    background-color: var(--team);
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: var(--text);
   }
 }
