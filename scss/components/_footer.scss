@@ -1,6 +1,6 @@
 .footer {
   font-size: 16px;
-  background-color: var(--background);
+  background-color: getColor("background");
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -11,7 +11,7 @@
   margin-bottom: 20px;
 }
 .footer-secondpart {
-  color: var(--place);
+  color: getColor("place");
 }
 .footer-logo {
   margin-right: 93px;
@@ -21,7 +21,7 @@
   display: flex;
   gap: 9px;
   &__place {
-    color: var(--place);
+    color: getColor("place");
   }
   &__list {
     display: flex;
@@ -30,5 +30,5 @@
   }
 }
 .link {
-  color: var(--foot);
+  color: getColor("foot");
 }

@@ -4,7 +4,7 @@
   row-gap: 30px;
   justify-content: space-between;
   &__item {
-    border: 1px solid var(--pics);
+    border: 1px solid getColor("pics");
     padding-bottom: 20px;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -36,7 +36,7 @@
     letter-spacing: 1.08px;
   }
   &__text {
-    color: var(--text);
+    color: getColor("text");
     line-height: 1.88;
     letter-spacing: 0.48px;
     font-size: 16px;

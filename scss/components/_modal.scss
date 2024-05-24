@@ -17,7 +17,7 @@
 .modal {
   /* display: none; */
   position: fixed;
-  background: #ffffff;
+  background: getColor("place");
   padding: 40px;
   border-radius: 4px;
   width: 528px;
@@ -28,7 +28,7 @@
   &-close__btn {
     width: 30px;
     height: 30px;
-    background-color: var(--place);
+    background-color: getColor("place");
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     position: absolute;
@@ -40,7 +40,7 @@
     align-content: space-around;
     &:hover,
     &:focus {
-      fill: var(--hover);
+      fill: getColor("hover");
     }
   }
   &-title {
@@ -59,7 +59,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
-    color: var(--text);
+    color: getColor("text");
     display: block;
     margin-bottom: 4px;
   }
@@ -72,16 +72,16 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 1.14;
-      color: var(--title);
+      color: getColor("title");
       height: 120px;
       padding: 12px 16px;
       outline: none;
       &:placeholder-shown {
-        color: var(--modal);
+        color: getColor("modal");
       }
       &:hover,
       :focus {
-        border-color: var(--hover);
+        border-color: getColor("hover");
       }
     }
   }
@@ -90,7 +90,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1.71;
-    color: var(--text);
+    color: getColor("text");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,14 +101,14 @@
       border: 2px solid #000000;
       border-radius: 3px;
       &:checked + .label-accept::before {
-        background-color: var(--hover);
+        background-color: getColor("hover");
         border: none;
         background-image: url(../images/check.svg);
         background-repeat: no-repeat;
         background-position: center;
       }
       &:checked + &:focus + .label-accept::before {
-        border-color: var(--hover);
+        border-color: getColor("hover");
       }
     }
     .label-accept {
@@ -116,7 +116,7 @@
     }
     .label-accept {
       .accept-link {
-        color: var(--hover);
+        color: getColor("hover");
         text-decoration: underline;
       }
     }
@@ -126,16 +126,16 @@
     width: 200px;
     height: 50px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: var(--hover);
-    color: var(--place);
+    background: getColor("hover");
+    color: getColor("place");
     font-weight: 700;
     font-size: 16px;
     display: block;
     margin: 0 auto;
     border: none;
     &:hover {
-      color: var(--hover);
-      background: var(--place);
+      color: getColor("hover");
+      background: getColor("place");
     }
   }
 }
@@ -149,7 +149,7 @@
   outline: none;
   &:hover,
   &:focus {
-    border-color: var(--hover);
+    border-color: getColor("hover");
   }
   &__wrap {
     position: relative;
@@ -157,13 +157,13 @@
     .input-icon {
       position: absolute;
       left: 12px;
-      fill: var(--title);
+      fill: getColor("title");
       align-self: center;
       justify-self: center;
     }
     .modal-input:hover + .input-icon,
     .modal-input:focus + .input-icon {
-      fill: var(--hover);
+      fill: getColor("hover");
     }
   }
 }

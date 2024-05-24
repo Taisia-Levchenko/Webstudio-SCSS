@@ -20,10 +20,10 @@
   margin-right: 93px;
 }
 .first-part {
-  color: var(--hover);
+  color: getColor("hover");
 }
 .second-part {
-  color: var(--second);
+  color: getColor("second");
 }
 .nav-list {
   display: flex;
@@ -32,7 +32,7 @@
     position: relative;
   }
   &__link {
-    color: var(--title);
+    color: getColor("title");
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -41,10 +41,10 @@
 .current::after {
   content: "";
   display: block;
-  color: var(--hover);
+  color: getColor("hover");
   height: 4px;
   width: 100%;
-  background: var(--hover);
+  background: getColor("hover");
   border-radius: 2px;
   position: absolute;
   left: 0;
@@ -53,10 +53,10 @@
 .other::after {
   content: "";
   display: block;
-  color: var(--hover);
+  color: getColor("hover");
   height: 4px;
   width: 0;
-  background-color: var(--hover);
+  background-color: getColor("hover");
   border-radius: 2px;
   position: absolute;
   left: 0;
@@ -73,7 +73,7 @@
     flex-wrap: wrap;
   }
   &__link {
-    color: var(--text);
+    color: getColor("text");
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.28px;
@@ -85,7 +85,7 @@
     }
     &:hover {
         .header-svg {
-            fill: var(--hover);
+            fill: getColor("hover");
         }
     }
   }
@@ -95,6 +95,6 @@
     display: inline-block;
     margin: 0 10px;
     vertical-align: middle;
-    fill: var(--text);
+    fill: getColor("text");
   }
 }

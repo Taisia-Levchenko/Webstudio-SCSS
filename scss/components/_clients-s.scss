@@ -9,7 +9,7 @@
   }
   &-item {
     &__svg {
-      fill: var(--clients);
+      fill: getColor("clients");
     }
   }
 }
@@ -17,7 +17,7 @@
   display: flex;
   gap: 30px;
   &__item {
-    border: 1px solid #afb1b8;
+    border: 1px solid getColor("clients");
     border-radius: 4px;
     width: 170px;
     height: 92px;
@@ -25,9 +25,9 @@
     align-items: center;
     justify-content: center;
     &:hover {
-      border: 1px solid #2196f3;
+      border: 1px solid getColor("hover");
       .clients-item__svg {
-        fill: var(--hover);
+        fill: getColor("hover");
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }

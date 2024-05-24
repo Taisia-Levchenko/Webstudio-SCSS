@@ -1,8 +1,8 @@
 .section-hero {
   /* width: 1600px;
     height: 600px;  */
-  color: var(--place);
-  background-color: var(--background);
+  color: getColor("place");
+  background-color: getColor("background");
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -16,8 +16,8 @@
     padding-top: 200px;
   }
   &__btn {
-    color: var(--place);
-    background-color: var(--hover);
+    color: getColor("place");
+    background-color: getColor("hover");
     font-family: "Roboto", serif;
     font-size: 16px;
     font-weight: 700;
@@ -28,8 +28,8 @@
     height: 50px;
     border: none;
     &:hover {
-      color: var(--hover);
-      background: var(--place);
+      color: getColor("hover");
+      background: getColor("place");
     }
   }
   &__title {

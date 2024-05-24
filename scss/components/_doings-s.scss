@@ -25,11 +25,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: var(--place);
+    color: getColor("place");
     position: relative;
     z-index: 3;
     top: -75px;
-    background-color: var(--bg-doings);
+    background-color: getColor("bg-doings");
     padding-top: 27px;
     padding-bottom: 27px;
   }

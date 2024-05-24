@@ -8,7 +8,7 @@
   margin-bottom: 50px;
   flex-basis: calc((100% - 4 * 8px) / 5);
   &__button {
-    color: var(--title);
+    color: getColor("title");
     text-align: center;
     font-family: "Roboto", serif;
     font-size: 16px;
@@ -22,8 +22,9 @@
     border-radius: 4px;
     padding: 6px 22px;
     &:hover {
-      color: var(--place);
-      background-color: var(--hover);
+      color: getColor("place");
+      // color: getColor("nav");
+      background-color: getColor("hover");
       box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
         0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
       transition-property: background-color, color, box-shadow;

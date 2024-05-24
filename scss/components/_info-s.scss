@@ -2,7 +2,7 @@
   padding-bottom: 94px;
   padding-top: 94px;
   &-svg {
-    fill: var(--title);
+    fill: getColor("title");
   }
 }
 .info-list {
@@ -21,13 +21,13 @@
     border-radius: 4px;
     width: 270px;
     height: 120px;
-    background-color: var(--team);
+    background-color: getColor("team");
     margin-bottom: 30px;
   }
   &__title {
     margin-bottom: 10px;
   }
   &__text {
-    color: var(--text);
+    color: getColor("text");
   }
 }
