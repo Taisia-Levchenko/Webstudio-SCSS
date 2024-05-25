@@ -8,12 +8,12 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: normal;
-  color: var(--title);
+  color: #212121;
   font-size: 14px;
 }
 
 a:hover, a:focus {
-  color: var(--hover);
+  color: #2196F3;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -28,6 +28,25 @@ button {
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul,
+p,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header .container {

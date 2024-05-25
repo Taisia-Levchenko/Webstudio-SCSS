@@ -8,14 +8,14 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: normal;
-  color: var(--title);
+  color: getColor("title");
   font-size: 14px;
 }
 
 a {
   &:hover,
   &:focus {
-    color: var(--hover);
+    color: getColor("hover");
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
