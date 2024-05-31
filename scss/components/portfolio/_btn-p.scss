@@ -10,7 +10,7 @@
   &__button {
     color: getColor("title");
     text-align: center;
-    font-family: "Roboto", serif;
+    font-family: getFont("roboto-font");
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

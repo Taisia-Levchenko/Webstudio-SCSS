@@ -19,3 +19,11 @@ $colors: (
 @function getColor($key){
     @return map-get($colors, $key);
 }
+
+$fonts: (
+    "roboto-font": #{'"Roboto", sans-serif'},
+    "raleway-font": #{'"Raleway", sans-serif'},
+);
+@function getFont($key){
+    @return map-get($fonts, $key);
+}

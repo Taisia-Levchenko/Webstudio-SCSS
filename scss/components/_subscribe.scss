@@ -2,7 +2,7 @@
   padding-left: 72px;
   padding-top: 10px;
   &-text {
-    font-family: "Roboto", sans-serif;
+    font-family: getFont("roboto-font");
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;

@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
@@ -57,7 +57,7 @@ a {
   align-items: center;
 }
 
-.header_div {
+.header-div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -66,20 +66,16 @@ a {
 
 .logo {
   font-size: 26px;
-  font-family: "Raleway", serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-}
-
-.header-logo {
-  margin-right: 93px;
-}
-
-.first-part {
   color: #2196F3;
 }
-
-.second-part {
+.logo--studio-header {
   color: #000;
+}
+
+.header-div__logo {
+  margin-right: 93px;
 }
 
 .nav-list {
@@ -176,7 +172,7 @@ a {
 .btn-div__button {
   color: #212121;
   text-align: center;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -281,16 +277,8 @@ a {
   display: flex;
 }
 
-.foot-logo {
-  margin-bottom: 20px;
-}
-
-.footer-secondpart {
+.logo--studio-footer {
   color: #FFF;
-}
-
-.footer-logo {
-  margin-right: 93px;
 }
 
 .footer-sect {
@@ -300,6 +288,7 @@ a {
 }
 .footer-sect__place {
   color: #FFF;
+  margin-top: 20px;
 }
 .footer-sect__list {
   display: flex;

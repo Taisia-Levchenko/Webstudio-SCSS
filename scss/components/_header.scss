@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.header_div {
+.header-div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,17 +13,15 @@
 }
 .logo {
   font-size: 26px;
-  font-family: "Raleway", serif;
+  font-family: getFont("raleway-font");
   font-weight: 700;
-}
-.header-logo {
-  margin-right: 93px;
-}
-.first-part {
   color: getColor("hover");
+  &--studio-header {
+    color: getColor("second");
+  }
 }
-.second-part {
-  color: getColor("second");
+.header-div__logo {
+  margin-right: 93px;
 }
 .nav-list {
   display: flex;

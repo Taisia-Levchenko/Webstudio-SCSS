@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
-    <link rel="stylesheet" href="./css/styles.min.css" />
 
     <link
       rel="stylesheet"
@@ -20,13 +19,15 @@
     />
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body class="body">
     <header class="header">
       <div class="container">
-        <div class="header_div">
-          <a href="./index.html" class="logo first-part header-logo"
-            >Web<span class="logo second-part">Studio</span></a
+        <div class="header-div">
+          <a href="./index.html" class="logo header-div__logo"
+            >Web<span class="logo logo--studio-header">Studio</span></a
           >
           <nav class="nav">
             <ul class="nav-list">
@@ -51,7 +52,8 @@
                 <svg class="header-contact__svg" width="10" height="12">
                   <use href="./icons/symbol-defs.svg#icon-envelope"></use>
                 </svg>
-                info@devstudio.com</a>
+                info@devstudio.com</a
+              >
             </li>
             <li class="header-contact__item">
               <a href="tel:380961111111" class="header-contact__link"
@@ -173,7 +175,7 @@
               />
               <h4 class="team-list__title">Ігор Дем'яненко</h4>
               <p class="team-list__text">Product Designer</p>
-              <ul class="team-list__svg">
+              <ul class="team-list__svg svg-list">
                 <li class="svg-list__item">
                   <a href="#" class="svg-list__link">
                     <svg class="svg-list__svg" width="20" height="20">
@@ -212,7 +214,7 @@
               />
               <h4 class="team-list__title">Ольга Рєпіна</h4>
               <p class="team-list__text">Frontend Developer</p>
-              <ul class="team-list__svg">
+              <ul class="team-list__svg svg-list">
                 <li class="svg-list__item">
                   <a href="#" class="svg-list__link">
                     <svg class="svg-list__svg" width="20" height="20">
@@ -251,7 +253,7 @@
               />
               <h4 class="team-list__title">Микола Тарасов</h4>
               <p class="team-list__text">Marketing</p>
-              <ul class="team-list__svg">
+              <ul class="team-list__svg svg-list">
                 <li class="svg-list__item">
                   <a href="#" class="svg-list__link">
                     <svg class="svg-list__svg" width="20" height="20">
@@ -290,7 +292,7 @@
               />
               <h4 class="team-list__title">Михайло Єрмаков</h4>
               <p class="team-list__text">UI Designer</p>
-              <ul class="team-list__svg">
+              <ul class="team-list__svg svg-list">
                 <li class="svg-list__item">
                   <a href="#" class="svg-list__link">
                     <svg class="svg-list__svg" width="20" height="20">
@@ -368,9 +370,12 @@
       <div class="container">
         <div class="footer-info">
           <div class="foot-logo">
-            <a href="./index.html" class="logo first-part footer-logo"
-              >Web<span class="logo footer-secondpart">Studio</span></a
+            <a href="./index.html" class="logo footer-info__logo"
+              >Web<span class="logo logo--studio-footer">Studio</span></a
             >
+            <!-- <a href="./index.html" class="logo first-part footer-indo__logo"
+              >Web<span class="logo footer-secondpart">Studio</span></a
+            > -->
           </div>
           <section class="footer-sect">
             <p class="footer-sect__place">м. Київ, пр-т Лесі Українки, 26</p>
@@ -383,9 +388,7 @@
                 >
               </li>
               <li class="footer-list__item">
-                <a 
-                  href="tel:380961111111" 
-                  class="link footer-list__link"
+                <a href="tel:380961111111" class="link footer-list__link"
                   >+38 096 111 11 11</a
                 >
               </li>
