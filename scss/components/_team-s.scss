@@ -46,7 +46,7 @@
   }
 }
 .svg-list {
-  margin-top: 18px;
+  // margin-top: 18px;
   &__link:hover .svg-list__svg {
     fill: getColor("place");
   }
