@@ -12,10 +12,11 @@
 //       line-height: 1.71;
 //       letter-spacing: 0.42px;
 .doings-list {
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
   gap: 30px;
-  justify-content: space-between;
+  // justify-content: space-between;
+  @include flex(row, space-between);
   &__item {
     flex-basis: calc((100% - 60px) / 3);
   }

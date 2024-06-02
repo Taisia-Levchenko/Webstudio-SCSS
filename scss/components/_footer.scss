@@ -11,16 +11,18 @@
   color: getColor("place");
 }
 .footer-sect {
-  flex-direction: column;
-  display: flex;
+  // flex-direction: column;
+  // display: flex;
+  @include flex(column, center);
   gap: 9px;
   &__place {
     color: getColor("place");
     margin-top: 20px;
   }
   &__list {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    @include flex(column, center);
     gap: 9px;
   }
 }

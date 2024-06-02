@@ -34,9 +34,10 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-around;
+    @include flex(row, space-around);
     align-content: space-around;
     &:hover,
     &:focus {
@@ -91,9 +92,10 @@
     font-size: 12px;
     line-height: 1.71;
     color: getColor("text");
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    @include flex(row, center);
     margin-top: 20px;
     .input-accept {
       width: 16px;

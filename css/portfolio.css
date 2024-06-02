@@ -325,11 +325,11 @@ a {
 }
 
 .foot-links {
-  text-transform: uppercase;
   display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
   padding-top: 10px;
   gap: 10px;
-  flex-direction: column;
   margin-left: 90px;
 }
 .foot-links__title {

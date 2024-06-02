@@ -9,9 +9,10 @@
     ),
     url("../images/bg-hero.jpg");
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    @include flex(column, center);
     padding-bottom: 200px;
     padding-top: 200px;
   }

@@ -13,9 +13,10 @@
   }
 }
 .team-list {
-  display: flex;
-  /* width: 1200px; */
-  flex-wrap: wrap;
+  // display: flex;
+  // /* width: 1200px; */
+  // flex-wrap: wrap;
+  @include flex(row, space-between);
   gap: 30px;
   &__item {
     background-color: getColor("place");

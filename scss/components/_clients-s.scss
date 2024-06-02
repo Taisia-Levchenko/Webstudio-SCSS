@@ -17,13 +17,14 @@
   display: flex;
   gap: 30px;
   &__item {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    @include flex(row, center);
     border: 1px solid getColor("clients");
     border-radius: 4px;
     width: 170px;
     height: 92px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     &:hover {
       border: 1px solid getColor("hover");
       .clients-item__svg {

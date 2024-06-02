@@ -1,15 +1,16 @@
 .header .container {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(row, space-between);
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
 }
 .header-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+  // display: flex;
+  // align-items: center;
+  // flex-wrap: wrap;
+  @include flex(row, center);
 }
 .logo {
   font-size: 26px;
@@ -24,7 +25,8 @@
   margin-right: 93px;
 }
 .nav-list {
-  display: flex;
+  // display: flex;
+  @include flex(row, center);
   gap: 50px;
   &__item {
     position: relative;
@@ -66,9 +68,10 @@
 }
 .header-contact {
   &__list {
-    display: flex;
+    // display: flex;
+    // flex-wrap: wrap;
     gap: 50px;
-    flex-wrap: wrap;
+    @include flex(row, center);
   }
   &__link {
     color: getColor("text");

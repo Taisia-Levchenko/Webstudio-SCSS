@@ -340,13 +340,13 @@ a {
   gap: 30px;
 }
 .clients-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .clients-list__item:hover {
   border: 1px solid #2196F3;
@@ -415,11 +415,11 @@ a {
 }
 
 .foot-links {
-  text-transform: uppercase;
   display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
   padding-top: 10px;
   gap: 10px;
-  flex-direction: column;
   margin-left: 90px;
 }
 .foot-links__title {

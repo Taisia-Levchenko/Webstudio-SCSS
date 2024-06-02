@@ -1,9 +1,10 @@
 .foot-links {
+  // display: flex;
+  // flex-direction: column;
+  @include flex(column, center);
   text-transform: uppercase;
-  display: flex;
   padding-top: 10px;
   gap: 10px;
-  flex-direction: column;
   margin-left: 90px;
   &__title {
     font-weight: 600;

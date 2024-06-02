@@ -1,12 +1,14 @@
 .svg-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include flex(row, space-between);
   gap: 10px;
   &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    @include flex(row, space-between);
     width: 44px;
     height: 44px;
     opacity: 1;
