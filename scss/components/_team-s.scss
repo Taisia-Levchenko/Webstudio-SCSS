@@ -11,62 +11,43 @@
     margin-bottom: 50px;
     text-align: center;
   }
-  &-list {
-    display: flex;
-    /* width: 1200px; */
-    flex-wrap: wrap;
-    gap: 30px;
-    &__item {
-      background-color: getColor("place");
-      /* width: 270px; */
-      /* height: 368px; */
-      padding-bottom: 30px;
-      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-      flex-basis: calc((100% - 3 * 30px) / 4);
-    }
-    &__img {
-      height: 260px;
-    }
-    &__title {
-      font-size: 16px;
-      font-weight: 500;
-      letter-spacing: 0.48px;
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 10px;
-      /* padding: 30px 70px 10px 0px; */
-    }
-    &__text {
-      font-size: 16px;
-      letter-spacing: 0.48px;
-      text-align: center;
-    }
-    &__svg {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 18px;
-      gap: 10px;
-    }
+}
+.team-list {
+  display: flex;
+  /* width: 1200px; */
+  flex-wrap: wrap;
+  gap: 30px;
+  &__item {
+    background-color: getColor("place");
+    /* width: 270px; */
+    /* height: 368px; */
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  &__img {
+    height: 260px;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    /* padding: 30px 70px 10px 0px; */
+  }
+  &__text {
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    text-align: center;
   }
 }
 .svg-list {
+  margin-top: 18px;
   &__link:hover .svg-list__svg {
     fill: getColor("place");
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    &:hover {
-      background-color: getColor("hover");
-      border-radius: 50%;
-    }
   }
   &__svg {
     fill: getColor("clients");

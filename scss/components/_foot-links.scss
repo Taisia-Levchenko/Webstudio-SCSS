@@ -14,27 +14,10 @@
   }
 }
 .foot-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
   &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
     background-color: getColor("foot-links");
-    opacity: 1;
-    &:hover {
-      background-color: getColor("hover");
-      opacity: 1;
-    }
-  }
-  &__item:hover .foot-list__svg {
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // opacity: 1;
   }
   &__svg {
     fill: getColor("place");

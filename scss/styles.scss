@@ -1,4 +1,4 @@
-@import "./base/variable";
+@import "./utils/variable";
 @import "./base/common";
 @import "./base/reset";
 
@@ -8,6 +8,7 @@
 @import "./components/doings-s";
 @import "./components/team-s";
 @import "./components/clients-s";
+@import "./components/svg-list";
 
 @import "./components/footer";
 @import "./components/foot-links";
