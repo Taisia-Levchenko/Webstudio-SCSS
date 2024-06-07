@@ -8,25 +8,28 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/bg-hero.jpg");
+    // @extend %bg;
   .container {
     // display: flex;
-    // flex-direction: column;
+    flex-direction: column;
     // align-items: center;
-    @include flex(column, center);
+    @extend %flex-c;
     padding-bottom: 200px;
     padding-top: 200px;
   }
   &__btn {
-    color: getColor("place");
-    background-color: getColor("hover");
-    font-family: "roboto-font";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
+    @include btn(getColor("place"), getColor("hover"), 16px, 4px, 700, 10px 32px);
+    @include text(getColor("place"), 16px, 700, 1.88, normal); 
+    // color: getColor("place");
+    // background-color: getColor("hover");
+    font-family: getFont("roboto-font");
+    // font-size: 16px;
+    // font-weight: 700;
+    // line-height: 1.88;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    width: 216px;
-    height: 50px;
+    // border-radius: 4px;
+    // width: 216px;
+    // height: 50px;
     border: none;
     &:hover {
       color: getColor("hover");
@@ -34,11 +37,12 @@
     }
   }
   &__title {
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
+    @include text(getColor("place"), 44px, 900, 1.36, 2.64px);
+    // font-size: 44px;
+    // font-weight: 900;
+    // line-height: 1.36;
     text-transform: uppercase;
-    letter-spacing: 2.64px;
+    // letter-spacing: 2.64px;
     margin-bottom: 30px;
     text-align: center;
   }

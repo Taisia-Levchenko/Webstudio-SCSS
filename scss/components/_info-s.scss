@@ -7,10 +7,10 @@
 }
 .info-list {
   // display: flex;
-  // flex-direction: row;
+  flex-direction: row;
   // justify-content: center;
-  // flex-wrap: wrap;
-  @include flex(row, center);
+  @extend %flex-c;
+  flex-wrap: wrap;
   gap: 30px;
   &__item {
     flex-basis: calc((100% - 3 * 30px) / 4);
@@ -19,7 +19,7 @@
     // display: flex;
     // justify-content: center;
     // align-items: center;
-    @include flex(row, center);
+    @extend %flex-c;    
     border-radius: 4px;
     width: 270px;
     height: 120px;

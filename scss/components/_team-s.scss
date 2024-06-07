@@ -5,18 +5,18 @@
   padding-top: 94px;
   flex-wrap: wrap;
   &-title {
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
+    @include text(getColor("title"), 36px, 700, normal, 1.08px);
+    // font-size: 36px;
+    // font-weight: 700;
+    // letter-spacing: 1.08px;
     margin-bottom: 50px;
     text-align: center;
   }
 }
 .team-list {
-  // display: flex;
+  display: flex;
   // /* width: 1200px; */
-  // flex-wrap: wrap;
-  @include flex(row, space-between);
+  flex-wrap: wrap;
   gap: 30px;
   &__item {
     background-color: getColor("place");
@@ -27,13 +27,17 @@
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     flex-basis: calc((100% - 3 * 30px) / 4);
   }
-  &__img {
+  &__box {
     height: 260px;
   }
+  &__img {
+    @extend %imgs;
+  }
   &__title {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.48px;
+    @include text(getColor("title"), 16px, 500, normal, 0.48px);
+    // font-size: 16px;
+    // font-weight: 500;
+    // letter-spacing: 0.48px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;

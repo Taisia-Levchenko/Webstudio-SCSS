@@ -1,22 +1,23 @@
 .header .container {
   padding-top: 32px;
   padding-bottom: 32px;
-  @include flex(row, space-between);
   // display: flex;
   // justify-content: space-between;
-  // align-items: center;
+  @extend %flex-b;
+  align-items: center;
 }
 .header-div {
   // display: flex;
   // align-items: center;
-  // flex-wrap: wrap;
-  @include flex(row, center);
+  @extend %flex-c;
+  flex-wrap: wrap;
 }
 .logo {
-  font-size: 26px;
+  @include text(getColor("hover"), 26px, 700, normal, normal);
+  // font-size: 26px;
   font-family: getFont("raleway-font");
-  font-weight: 700;
-  color: getColor("hover");
+  // font-weight: 700;
+  // color: getColor("hover");
   &--studio-header {
     color: getColor("second");
   }
@@ -25,17 +26,17 @@
   margin-right: 93px;
 }
 .nav-list {
-  // display: flex;
-  @include flex(row, center);
+  display: flex;
   gap: 50px;
   &__item {
     position: relative;
   }
   &__link {
-    color: getColor("title");
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
+    @include text(getColor("title"), 14px, 500, normal, 0.28px);
+    // color: getColor("title");
+    // font-size: 14px;
+    // font-weight: 500;
+    // letter-spacing: 0.28px;
   }
 }
 .current::after {
@@ -68,16 +69,16 @@
 }
 .header-contact {
   &__list {
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     gap: 50px;
-    @include flex(row, center);
   }
   &__link {
-    color: getColor("text");
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
+    @include text(getColor("text"), 14px, 500, normal, 0.28px);
+    // color: getColor("text");
+    // font-size: 14px;
+    // font-weight: 500;
+    // letter-spacing: 0.28px;
     svg {
         transition: transform 0.3s ease;
         &:hover {

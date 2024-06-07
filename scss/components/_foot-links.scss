@@ -1,17 +1,16 @@
 .foot-links {
-  // display: flex;
-  // flex-direction: column;
-  @include flex(column, center);
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
   padding-top: 10px;
   gap: 10px;
   margin-left: 90px;
   &__title {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: getColor("place");
-    margin-bottom: 16px;
+    @include text(getColor("place"), 14px, 600, 17px, normal);
+    // font-weight: 600;
+    // font-size: 14px;
+    // line-height: 17px;
+    // color: getColor("place");
   }
 }
 .foot-list {

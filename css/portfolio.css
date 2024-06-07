@@ -1,15 +1,27 @@
+.svg-list__link, .svg-list, .btn-div, .header-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-list, .header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 * {
   box-sizing: border-box;
   flex-wrap: wrap;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: normal;
   color: #212121;
   font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
 }
 
 a:hover, a:focus {
@@ -52,23 +64,20 @@ a {
 .header .container {
   padding-top: 32px;
   padding-bottom: 32px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .header-div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .logo {
-  font-size: 26px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
   color: #2196F3;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Raleway", sans-serif;
 }
 .logo--studio-header {
   color: #000;
@@ -89,6 +98,7 @@ a {
   color: #212121;
   font-size: 14px;
   font-weight: 500;
+  line-height: normal;
   letter-spacing: 0.28px;
 }
 
@@ -125,13 +135,14 @@ a {
 
 .header-contact__list {
   display: flex;
-  gap: 50px;
   flex-wrap: wrap;
+  gap: 50px;
 }
 .header-contact__link {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
+  line-height: normal;
   letter-spacing: 0.28px;
 }
 .header-contact__link svg {
@@ -161,28 +172,28 @@ a {
 
 .btn-div {
   padding-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
   flex-basis: calc((100% - 32px) / 5);
 }
 .btn-div__button {
   color: #212121;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+  background-color: #F5F4FA;
   font-size: 16px;
-  font-style: normal;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 6px 22px;
+  color: #212121;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: 0.48px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   /* width: 125px;
   height: 38px;  */
   border: none;
-  border-radius: 4px;
-  padding: 6px 22px;
 }
 .btn-div__button:hover {
   color: #FFF;
@@ -203,10 +214,8 @@ a {
   }
 }
 .main-list {
-  display: flex;
   flex-wrap: wrap;
   row-gap: 30px;
-  justify-content: space-between;
 }
 .main-list__item {
   border: 1px solid #EEE;
@@ -234,6 +243,7 @@ a {
   font-size: 16px;
 }
 .main-list__title {
+  color: #212121;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -241,9 +251,10 @@ a {
 }
 .main-list__text {
   color: #757575;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.88;
   letter-spacing: 0.48px;
-  font-size: 16px;
 }
 
 .overlay {
@@ -259,27 +270,23 @@ a {
 }
 .overlay .overlay-text {
   color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 156%;
+  letter-spacing: normal;
   padding: 62px 23px;
   margin: 0;
-  font-weight: 400;
-  font-size: 18px;
   z-index: 20;
-  line-height: 156%;
 }
 
 .svg-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 .svg-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   opacity: 1;
+  margin-top: 18px;
 }
 .svg-list__link:hover {
   background-color: #2196F3;
@@ -333,11 +340,11 @@ a {
   margin-left: 90px;
 }
 .foot-links__title {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
   color: #FFF;
-  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: normal;
 }
 
 .foot-list__link {
@@ -353,11 +360,13 @@ a {
   padding-top: 10px;
 }
 .subscribe-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
   color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
   margin-bottom: 19px;
 }
 .subscribe-box {
@@ -382,12 +391,17 @@ a {
 .subscribe-box__btn {
   color: #FFF;
   background-color: #2196F3;
-  font-weight: 700;
   font-size: 16px;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 0px 0px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
+  letter-spacing: normal;
   width: 200px;
   height: 50px;
-  border-radius: 4px;
   fill: #757575;
   display: inline-flex;
   align-items: center;

@@ -1,32 +1,37 @@
 .btn-div {
   padding-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @extend %flex-c;
+  // flex-direction: row;
+  
   gap: 8px;
   margin-bottom: 50px;
   flex-basis: calc((100% - 4 * 8px) / 5);
   &__button {
-    color: getColor("title");
+    @include btn(getColor("title"), getColor("team"), 16px, 4px, 500, 6px 22px);
+    @include text(getColor("title"), 16px, 500, 1.63, 0.48px);
+    // color: getColor("title");
     text-align: center;
     font-family: getFont("roboto-font");
-    font-size: 16px;
+    // font-size: 16px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 1.63;
-    letter-spacing: 0.48px;
+    // font-weight: 500;
+    // line-height: 1.63;
+    // letter-spacing: 0.48px;
     /* width: 125px;
     height: 38px;  */
     border: none;
-    border-radius: 4px;
-    padding: 6px 22px;
+    // border-radius: 4px;
+    // padding: 6px 22px;
     &:hover {
       color: getColor("place");
       // color: getColor("nav");
       background-color: getColor("hover");
       box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
         0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+
       transition-property: background-color, color, box-shadow;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

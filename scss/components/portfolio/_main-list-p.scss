@@ -1,8 +1,10 @@
 .main-list {
-  display: flex;
+  // display: flex;
+  // justify-content: space-between;
+  @extend %flex-b;
   flex-wrap: wrap;
   row-gap: 30px;
-  justify-content: space-between;
+  
   &__item {
     border: 1px solid getColor("pics");
     padding-bottom: 20px;
@@ -30,15 +32,17 @@
     font-size: 16px;
   }
   &__title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 1.08px;
+    @include text(getColor("title"), 18px, 700, 2, 1.08px);
+    // font-size: 18px;
+    // font-weight: 700;
+    // line-height: 2;
+    // letter-spacing: 1.08px;
   }
   &__text {
-    color: getColor("text");
-    line-height: 1.88;
-    letter-spacing: 0.48px;
-    font-size: 16px;
+    @include text(getColor("text"), 16px, 400, 1.88, 0.48px);
+    // color: getColor("text");
+    // line-height: 1.88;
+    // letter-spacing: 0.48px;
+    // font-size: 16px;
   }
 }

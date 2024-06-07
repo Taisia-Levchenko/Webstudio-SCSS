@@ -1,9 +1,10 @@
 .doings {
   padding-bottom: 94px;
   &-title {
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
+    @include text(getColor("title"), 36px, 700, normal, 0.42px);
+    // font-size: 36px;
+    // font-weight: 700;
+    // letter-spacing: 0.42px;
     text-align: center;
     margin-bottom: 50px;
   }
@@ -13,29 +14,34 @@
 //       letter-spacing: 0.42px;
 .doings-list {
   // display: flex;
-  // flex-direction: row;
-  gap: 30px;
   // justify-content: space-between;
-  @include flex(row, space-between);
+  @extend %flex-b;
+  flex-direction: row;
+  gap: 30px;
+  
   &__item {
     flex-basis: calc((100% - 60px) / 3);
   }
   &__text {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
+    @include text(getColor("place"), 14px, 700, normal, 0.03em);
+    // font-weight: 700;
+    // font-size: 14px;
+    // letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
-    color: getColor("place");
+    // color: getColor("place");
     position: relative;
     z-index: 3;
-    top: -75px;
+    top: -70px;
     background-color: getColor("bg-doings");
     padding-top: 27px;
     padding-bottom: 27px;
   }
-  &__photo {
+  &__box {
     width: 370px;
     height: 294px;
+  }
+  &__photo {
+    @extend %imgs;
   }
 }
