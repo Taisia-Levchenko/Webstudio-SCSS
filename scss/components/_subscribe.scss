@@ -1,4 +1,5 @@
 .subscribe {
+  @extend %flex-c;
   padding-left: 72px;
   padding-top: 10px;
   &-text {
@@ -10,9 +11,12 @@
     // color: getColor("place");
     margin-bottom: 19px;
   }
+  @media screen and (min-width: 480px) {
+    padding: 0;
+  }
   &-box {
     display: flex;
-    
+
     &__input {
       margin: auto;
       margin-bottom: 20px;
@@ -25,12 +29,23 @@
       color: getColor("place");
       outline: none;
       width: 358px;
+      @media screen and (min-width: 480px) {
+        width: 450px;
+      }
       &:focus {
         border-color: getColor("hover");
       }
     }
     &__btn {
-      @include btn(getColor("place"), getColor("hover"), 16px, 4px, 700, 0px 0px);
+      
+      @include btn(
+        getColor("place"),
+        getColor("hover"),
+        16px,
+        4px,
+        700,
+        0px 0px
+      );
       @include text(getColor("place"), 16px, 700, 1.88, normal);
       // color: getColor("place");
       // background-color: getColor("hover");
@@ -52,6 +67,9 @@
         color: getColor("hover");
         background-color: getColor("place");
       }
+      @media screen and (min-width: 480px) {
+    margin: 0 125px;
+  }
     }
     &__svg {
       margin-left: 10px;

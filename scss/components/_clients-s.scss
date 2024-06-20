@@ -1,6 +1,9 @@
 .clients {
   padding-top: 93px;
   padding-bottom: 94px;
+  // display: flex;
+  // flex-wrap: wrap;
+  margin: 0 auto;
   &-title {
     @include text(getColor("title"), 36px, 700, normal, normal);
     // font-weight: 700;
@@ -24,8 +27,16 @@
     @extend %flex-c;
     border: 1px solid getColor("clients");
     border-radius: 4px;
-    width: 170px;
     height: 92px;
+    @media screen and (min-width: 480px) {
+      width: 210px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
     &:hover {
       border: 1px solid getColor("hover");
       .clients-item__svg {

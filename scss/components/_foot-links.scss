@@ -1,5 +1,6 @@
 .foot-links {
   display: flex;
+  align-items: center;
   flex-direction: column;
   text-transform: uppercase;
   padding-top: 10px;
@@ -12,8 +13,14 @@
     // line-height: 17px;
     // color: getColor("place");
   }
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
+  }
 }
 .foot-list {
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+  }
   &__link {
     border-radius: 50%;
     background-color: getColor("foot-links");

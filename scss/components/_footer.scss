@@ -4,7 +4,17 @@
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+    @extend %flex-c;
+    flex-direction: column;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+}
+.foot-logo {
+  @media screen and (min-width: 480px) {
+    margin: 0;
+    padding: 0 163px;
   }
 }
 .logo--studio-footer {
@@ -13,6 +23,7 @@
 .footer-sect {
   flex-direction: column;
   display: flex;
+  align-items: center;
   gap: 9px;
   &__place {
     color: getColor("place");
@@ -22,6 +33,10 @@
     display: flex;
     flex-direction: column;
     gap: 9px;
+    @media screen and (min-width: 480px) {
+      gap: 8px;
+      padding-bottom: 60px;
+    }
   }
 }
 .link {

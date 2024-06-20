@@ -1,10 +1,18 @@
 .header .container {
-  padding-top: 32px;
-  padding-bottom: 32px;
   // display: flex;
   // justify-content: space-between;
   @extend %flex-b;
   align-items: center;
+  @media screen and (min-width: 480px) {
+    padding: 16px 15px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 26px 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .header-div {
   // display: flex;
@@ -24,6 +32,19 @@
 }
 .header-div__logo {
   margin-right: 93px;
+  // @media screen and (min-width: 480px) {
+  //   padding: 16px 15px;
+  // }
+}
+.icon-nav__phone {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) {
+    fill: getColor("second");
+    margin-left: 190px;
+    // padding-left: 50px;
+  }
 }
 .nav-list {
   display: flex;
@@ -37,6 +58,9 @@
     // font-size: 14px;
     // font-weight: 500;
     // letter-spacing: 0.28px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: none;
   }
 }
 .current::after {
@@ -71,7 +95,18 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      row-gap: 10px;
+      // column-gap: 10px;
+      flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 50px;
+      flex-direction: row;
+    }
   }
   &__link {
     @include text(getColor("text"), 14px, 500, normal, 0.28px);
@@ -80,23 +115,26 @@
     // font-weight: 500;
     // letter-spacing: 0.28px;
     svg {
-        transition: transform 0.3s ease;
-        &:hover {
-            transform: rotate(360deg);
-        }
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: rotate(360deg);
+      }
     }
     &:hover {
-        .header-svg {
-            fill: getColor("hover");
-        }
+      .header-svg {
+        fill: getColor("hover");
+      }
     }
   }
   &__svg {
     width: 20px;
     height: 20px;
     display: inline-block;
-    margin: 0 10px;
+
     vertical-align: middle;
     fill: getColor("text");
+    @media screen and (min-width: 1200px) {
+      margin: 0 10px;
+    }
   }
 }

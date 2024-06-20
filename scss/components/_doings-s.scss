@@ -1,4 +1,7 @@
 .doings {
+  @media screen and (max-width: 1199px){
+        display: none;
+    }
   padding-bottom: 94px;
   &-title {
     @include text(getColor("title"), 36px, 700, normal, 0.42px);

@@ -8,7 +8,8 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/bg-hero.jpg");
-    // @extend %bg;
+
+  // @extend %bg;
   .container {
     // display: flex;
     flex-direction: column;
@@ -18,8 +19,28 @@
     padding-top: 200px;
   }
   &__btn {
-    @include btn(getColor("place"), getColor("hover"), 16px, 4px, 700, 10px 32px);
-    @include text(getColor("place"), 16px, 700, 1.88, normal); 
+    @media screen and (min-width: 1200px) {
+      @include btn(
+        getColor("place"),
+        getColor("hover"),
+        16px,
+        4px,
+        700,
+        10px 32px
+      );
+    }
+
+    @media screen and (min-width: 480px) {
+      @include btn(
+        getColor("place"),
+        getColor("hover"),
+        16px,
+        4px,
+        700,
+        10px 24px
+      );
+    }
+    @include text(getColor("place"), 16px, 700, 1.88, normal);
     // color: getColor("place");
     // background-color: getColor("hover");
     font-family: getFont("roboto-font");
@@ -37,7 +58,12 @@
     }
   }
   &__title {
-    @include text(getColor("place"), 44px, 900, 1.36, 2.64px);
+    @media screen and (min-width: 1200px) {
+      @include text(getColor("place"), 44px, 900, 1.36, 2.64px);
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      @include text(getColor("place"), 26px, 900, 1.36, 2.64px);
+    }
     // font-size: 44px;
     // font-weight: 900;
     // line-height: 1.36;
