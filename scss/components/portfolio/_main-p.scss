@@ -1,6 +1,10 @@
 .main .container {
-    padding-bottom: 94px;
-    /* outline: 2px dotted blue;
+  padding-bottom: 94px;
+  /* outline: 2px dotted blue;
     width: 1200px;  */
-    padding-top: 94px;
+  padding-top: 94px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    padding-top: 61px;
+  }
+  border-top: 1px solid #ececec;
 }

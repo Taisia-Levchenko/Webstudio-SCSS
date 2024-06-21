@@ -18,9 +18,6 @@
   }
 }
 .team-list {
-  @media screen and (min-width: 480px) {
-    // flex-wrap: nowrap;
-  }
   display: flex;
   // /* width: 1200px; */
   flex-wrap: wrap;

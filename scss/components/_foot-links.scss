@@ -1,11 +1,15 @@
 .foot-links {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    align-items: center;
+    flex-direction: column;
+  }
+  // align-items: center;
+  // flex-direction: column;
   text-transform: uppercase;
   padding-top: 10px;
   gap: 10px;
-  margin-left: 90px;
+  // margin-left: 90px;
   &__title {
     @include text(getColor("place"), 14px, 600, 17px, normal);
     // font-weight: 600;
@@ -13,18 +17,28 @@
     // line-height: 17px;
     // color: getColor("place");
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     margin-left: 0;
   }
 }
 .foot-list {
+  // margin-top: 10px;
   @media screen and (min-width: 480px) {
     padding-bottom: 60px;
   }
   &__link {
     border-radius: 50%;
     background-color: getColor("foot-links");
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      margin: 0;
+    }
+
     // opacity: 1;
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-top: 10px;
+    }
   }
   &__svg {
     fill: getColor("place");

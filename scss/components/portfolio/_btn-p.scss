@@ -1,13 +1,29 @@
 .btn-div {
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
   // display: flex;
   // align-items: center;
   // justify-content: center;
-  @extend %flex-c;
-  // flex-direction: row;
-  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    column-gap: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   gap: 8px;
-  margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   flex-basis: calc((100% - 4 * 8px) / 5);
   &__button {
     @include btn(getColor("title"), getColor("team"), 16px, 4px, 500, 6px 22px);

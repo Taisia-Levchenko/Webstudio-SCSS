@@ -1,7 +1,13 @@
 .subscribe {
-  @extend %flex-c;
-  padding-left: 72px;
-  padding-top: 10px;
+  // @extend %flex-c;
+  display: flex;
+  // justify-content: center;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    align-items: center;
+    justify-content: center;
+  }
+  // margin-left: 50px;
+  margin-top: 10px;
   &-text {
     @include text(getColor("place"), 14px, 700, normal, normal);
     font-family: getFont("roboto-font");
@@ -9,16 +15,26 @@
     // font-size: 14px;
     text-transform: uppercase;
     // color: getColor("place");
-    margin-bottom: 19px;
+    margin-bottom: 20px;
+    margin-left: 10px;
   }
   @media screen and (min-width: 480px) {
     padding: 0;
   }
   &-box {
     display: flex;
+    gap: 12px;
+    @media screen and (min-width: 480px) {
+      margin: 0;
+      padding: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
 
     &__input {
-      margin: auto;
+      // margin: auto;
       margin-bottom: 20px;
       background-color: transparent;
       border: 1px solid getColor("subscribe");
@@ -28,16 +44,20 @@
       padding: 15px 16px;
       color: getColor("place");
       outline: none;
-      width: 358px;
       @media screen and (min-width: 480px) {
         width: 450px;
+        margin: 0 auto;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 358px;
+        // margin-right: 12px;
+        margin-top: -50px;
       }
       &:focus {
         border-color: getColor("hover");
       }
     }
     &__btn {
-      
       @include btn(
         getColor("place"),
         getColor("hover"),
@@ -61,15 +81,23 @@
       justify-content: center;
       align-content: space-around;
       border: none;
-      margin-left: 12px;
+      // margin-left: 12px;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
       &:hover + .subscribe-box__svg {
         color: getColor("hover");
         background-color: getColor("place");
       }
       @media screen and (min-width: 480px) {
-    margin: 0 125px;
-  }
+        margin: 0 125px;
+      }
+      @media screen and (min-width: 768px) {
+        margin: 0 284px;
+      }
+      @media screen and (min-width: 1200px) {
+        // margin-left: 12px;
+        margin: 0;
+        margin-top: -50px;
+      }
     }
     &__svg {
       margin-left: 10px;

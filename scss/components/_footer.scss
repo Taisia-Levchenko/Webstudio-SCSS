@@ -4,17 +4,48 @@
   .container {
     padding-top: 60px;
     padding-bottom: 60px;
-    @extend %flex-c;
-    flex-direction: column;
-    // display: flex;
-    // justify-content: center;
+    display: flex;
+    justify-content: center;
+    // margin: 0;
+    margin: 0 auto;
     // align-items: center;
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      align-items: center;
+    }
+    @media screen and (min-width: 480px) {
+      flex-direction: column;
+    }
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
+}
+.footer-info {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 104px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 75px;
+    width: 331px;
+    // margin-left: 138px;
+  }
+  // margin-right: 104px;
+  // margin-left: 100px;
 }
 .foot-logo {
   @media screen and (min-width: 480px) {
     margin: 0;
     padding: 0 163px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
   }
 }
 .logo--studio-footer {
@@ -23,7 +54,9 @@
 .footer-sect {
   flex-direction: column;
   display: flex;
-  align-items: center;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    align-items: center;
+  }
   gap: 9px;
   &__place {
     color: getColor("place");
@@ -32,10 +65,13 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 9px;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
       gap: 8px;
       padding-bottom: 60px;
+      // flex-direction: column;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 9px;
     }
   }
 }
