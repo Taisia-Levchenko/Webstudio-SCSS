@@ -3,8 +3,9 @@
   // justify-content: space-between;
   @extend %flex-b;
   flex-wrap: wrap;
-  row-gap: 30px;
+  gap: 30px;
   &__item {
+    position: absolute;
     border: 1px solid getColor("pics");
     padding-bottom: 20px;
     transition-property: box-shadow;
@@ -12,7 +13,20 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    flex-basis: calc((100% - 2 * 30px) / 3);
+    @media screen and (min-width: 480px) {
+      flex-basis: 100%;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+    &--last {
+      flex-grow: 0;
+    }
     &:hover {
       box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
         0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
@@ -20,6 +34,9 @@
         transform: translatey(0);
       }
     }
+  }
+  &__img {
+    @extend %imgs;
   }
   &__imgoverlay {
     position: relative;
