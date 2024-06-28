@@ -1,4 +1,4 @@
-.modal .accept-box, .svg-list__link, .svg-list, .clients-list__item, .info-list__svg, .info-list, .section-hero .container, .header-div {
+.modal .accept-box, .svg-list__link, .svg-list, .clients-list__item, .info-list__svg, .section-hero .container, .header-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,7 +321,9 @@ a {
 }
 
 .info-list {
+  display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -334,6 +336,22 @@ a {
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .info-list__svg {
+    width: 450px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .info-list__svg {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info-list__svg {
+    width: 270px;
+  }
 }
 .info-list__title {
   margin-bottom: 10px;
