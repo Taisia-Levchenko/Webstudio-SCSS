@@ -5,7 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: getColor("web-studio-white");
+  background-color: getColor("place");
   z-index: 133;
   overflow: auto;
   display: flex;
@@ -64,7 +64,7 @@
     );
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
-      color: getColor("project-blue");
+      color: getColor("hover");
     }
   }
 }
@@ -98,19 +98,21 @@
       border-left: 1px solid rgba(33, 33, 33, 0.2);
       border-right: 1px solid rgba(33, 33, 33, 0.2);
       padding-right: 12px;
+      padding-left: 12px;
       @media (min-width: 320px) and (max-width: 380px) {
         padding-right: 8px;
+        padding-left: 8px;
       }
     }
     &:nth-child(3) {
       border-right: 1px solid rgba(33, 33, 33, 0.2);
-      padding-right: 12px;
+      padding-right: 16px;
       @media (min-width: 320px) and (max-width: 380px) {
         padding-right: 8px;
       }
     }
   }
   &__link {
-    color: getColor("project-blue");
+    color: getColor("hover");
   }
 }
