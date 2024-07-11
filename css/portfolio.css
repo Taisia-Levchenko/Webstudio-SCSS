@@ -131,12 +131,6 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 480px) {
-  .icon-nav__phone {
-    fill: #000;
-    margin-left: 190px;
-  }
-}
 
 .nav-list {
   display: flex;

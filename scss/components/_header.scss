@@ -40,11 +40,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-  @media screen and (min-width: 480px) {
-    fill: getColor("second");
-    margin-left: 190px;
-    // padding-left: 50px;
-  }
 }
 .nav-list {
   display: flex;
