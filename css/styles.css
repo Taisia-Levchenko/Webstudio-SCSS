@@ -373,7 +373,7 @@ a {
     height: 600px;  */
   color: #FFF;
   background-color: #2F303A;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-hero/bg-hero.jpg");
 }
 .section-hero .container {
   flex-direction: column;
