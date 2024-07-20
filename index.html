@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="./css/styles.min.css"/>
+    <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body class="body">
     <header class="header">
@@ -161,31 +161,58 @@
           <ul class="doings-list">
             <li class="doings-list__item">
               <div class="doings-list__box">
-                <img
-                  src="./images/doings/чим-ми-займаємось1.jpg"
-                  alt="чим-ми-займаємось1"
-                  class="doings-list__photo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/doings/ourdoings1.jpg    1x,
+                      ./images/doings/ourdoings1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/doings/ourdoings1.jpg"
+                    alt="чим-ми-займаємось1"
+                    class="doings-list__photo"
+                  />
+                </picture>
               </div>
               <p class="doings-list__text">Десктопні додатки</p>
             </li>
             <li class="doings-list__item">
               <div class="doings-list__box">
-                <img
-                  src="./images/doings/чим-ми-займаємось2.jpg"
-                  alt="чим-ми-займаємось2"
-                  class="doings-list__photo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/doings/ourdoings2.jpg    1x,
+                      ./images/doings/ourdoings2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/doings/ourdoings2.jpg"
+                    alt="чим-ми-займаємось2"
+                    class="doings-list__photo"
+                  />
+                </picture>
               </div>
               <p class="doings-list__text">Мобільні додатки</p>
             </li>
             <li class="doings-list__item">
               <div class="doings-list__box">
-                <img
-                  src="./images/doings/чим-ми-займаємось3.jpg"
-                  alt="чим-ми-займаємось3"
-                  class="doings-list__photo"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/doings/ourdoings3.jpg    1x,
+                      ./images/doings/ourdoings3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/doings/ourdoings3.jpg"
+                    alt="чим-ми-займаємось3"
+                    class="doings-list__photo"
+                  />
+                </picture>
               </div>
               <p class="doings-list__text">Дизайнерські рішення</p>
             </li>
